@@ -13,13 +13,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
+}
+
+abstract class AppColor
+{
+  static Color primary = const Color(0xffF3F5F4);
 }
 
 class MyHomePage extends StatefulWidget {
