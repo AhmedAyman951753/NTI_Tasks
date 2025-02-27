@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/main.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'Buttons.dart';
+import 'MyButtons.dart';
 import 'MyContainers.dart';
-class Task2 extends StatelessWidget
+class HomeScreen extends StatelessWidget
 {
-  const Task2({super.key});
+  const HomeScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
