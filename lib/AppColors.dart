@@ -7,4 +7,5 @@ abstract class AppColors
   static const Color pink = Color(0xffFF1C92);
   static const Color  backcolorIcon = Color(0xffFFE4F2);
   static const Color red = Color(0XFFE4312B);
+  static const Color semiPink = Color(0XFFFFE4F2);
 }

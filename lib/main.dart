@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application/Task1.dart';
 import 'package:flutter_application/HomeScreen/Home_Screen.dart';
 import 'package:flutter_application/EditTask/Edit_Task.dart';
+import 'Profile/Profile.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -14,12 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: EditTask(),
+      home: Profile(),
     );
 
   }

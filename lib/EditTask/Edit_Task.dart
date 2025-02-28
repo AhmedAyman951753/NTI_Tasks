@@ -12,9 +12,9 @@ class EditTask extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0XFFF3F5F4),
+      backgroundColor: AppColors.primary,
       appBar: AppBar(
-        backgroundColor: Color(0XFFF3F5F4),
+        backgroundColor: AppColors.primary,
         leading: IconButton(onPressed: (){}, icon: SvgPicture.asset(AppIcons.arrowBack)),
         title: Center(child: Text("Edit Task")),
         actions: [
@@ -65,7 +65,7 @@ class EditTask extends StatelessWidget {
                       width: 35,
                       height: 35,
                       decoration: BoxDecoration(
-                        color: Color(0XFFFFE4F2),
+                        color: AppColors.semiPink,
                         borderRadius: BorderRadius.circular(5)
                       ),
                       child:  SvgPicture.asset(AppIcons.home2),
