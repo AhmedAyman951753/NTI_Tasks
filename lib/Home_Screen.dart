@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application/main.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'MyButtons.dart';
 import 'MyContainers.dart';
+import 'AppIcons.dart';
+import 'AppColors.dart';
 class HomeScreen extends StatelessWidget
 {
   const HomeScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0XFFF3F5F4),
+      backgroundColor: AppColors.primary,
       appBar: AppBar(
-        backgroundColor: Color(0XFFF3F5F4),
-        leading: IconButton(onPressed: (){}, icon: SvgPicture.asset('assets/icons/Vector.svg')),
+        backgroundColor: AppColors.primary,
+        leading: IconButton(onPressed: (){}, icon: SvgPicture.asset(AppIcons.arrowBack)),
         title: Center(child: Text("Today Tasks")),
         actions: [
           MyButtons(
@@ -21,7 +22,7 @@ class HomeScreen extends StatelessWidget
             width: 70.0,
             height: 28.0,
             radius: 14.0,
-            color: Color(0XFFCEEBDC),
+            color: AppColors.semiGreen,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -46,7 +47,7 @@ class HomeScreen extends StatelessWidget
                     MyButtons(margin: EdgeInsets.only(left: 8),
                       width: 70.0,
                       height: 28.0,
-                      color: Color(0XFF149954),
+                      color: AppColors.green,
                       radius: 14.0,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -111,7 +112,7 @@ class HomeScreen extends StatelessWidget
                     SizedBox(width: 50,),
                     MyButtons(width: 14,
                       height: 15,
-                      color: Color(0XFFCEEBDC),
+                      color: AppColors.semiGreen,
                       radius: 5,
                       child: Center(child: Text
                         ("5",
@@ -123,46 +124,46 @@ class HomeScreen extends StatelessWidget
                 ),
               ),
               MyContainers(title: "Work Task",
-                           iconData: SvgPicture.asset('assets/icons/bag.svg'),
+                           iconData: SvgPicture.asset(AppIcons.bag),
                            iconColor: Colors.black,
                            buttonLabel: "Future",
-                           buttonColor: Color(0XFFF3F5F4),
+                           buttonColor: AppColors.primary,
                            labelColor: Colors.black,
                            task: "Go to supermarket to buy some milk &\neggs",),
               SizedBox(height: 10),
 
               MyContainers(title: "Work Task",
-                iconData: SvgPicture.asset('assets/icons/bag.svg'),
+                iconData: SvgPicture.asset(AppIcons.bag),
                 iconColor: Colors.black,
                 buttonLabel: "Done",
-                buttonColor: Color(0XFF149954),
+                buttonColor: AppColors.green,
                 labelColor: Colors.white,
                 task: "Go to supermarket to buy some milk &\neggs",),
               SizedBox(height: 10),
 
               MyContainers(title: "Home Task",
-                iconData: SvgPicture.asset('assets/icons/home.svg'),
-                iconColor: Color(0XFFFF0084),
+                iconData: SvgPicture.asset(AppIcons.home),
+                iconColor: AppColors.pink,
                 buttonLabel: "Done",
-                buttonColor: Color(0XFF149954),
+                buttonColor: AppColors.green,
                 labelColor: Colors.white,
                 task: "Add new feature for Do It app and\ncommit it",),
               SizedBox(height: 10),
 
               MyContainers(title: "Personal Task",
-                iconData: SvgPicture.asset('assets/icons/person.svg'),
-                iconColor: Color(0XFF149954),
+                iconData: SvgPicture.asset(AppIcons.person),
+                iconColor: AppColors.green,
                 buttonLabel: "In Progress",
-                buttonColor: Color(0XFFF3F5F4),
+                buttonColor: AppColors.primary,
                 labelColor: Colors.black,
-                task: "Improve my English skills by trying to\nspeek",),
+                task: "Improve my English skills by trying to\nspeak",),
               SizedBox(height: 10),
 
               MyContainers(title: "Home Task",
-                iconData: SvgPicture.asset('assets/icons/home.svg'),
-                iconColor: Color(0XFFFF0084),
+                iconData: SvgPicture.asset(AppIcons.home),
+                iconColor: AppColors.pink,
                 buttonLabel: "Done",
-                buttonColor: Color(0XFF149954),
+                buttonColor: AppColors.green,
                 labelColor: Colors.white,
                 task: "Add new feature for Do It app and\ncommit it",),
 
