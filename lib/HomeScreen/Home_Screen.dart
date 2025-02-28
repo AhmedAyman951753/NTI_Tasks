@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'MyButtons.dart';
 import 'MyContainers.dart';
-import 'AppIcons.dart';
-import 'AppColors.dart';
+import '../AppIcons.dart';
+import '../AppColors.dart';
 class HomeScreen extends StatelessWidget
 {
   const HomeScreen({super.key});
