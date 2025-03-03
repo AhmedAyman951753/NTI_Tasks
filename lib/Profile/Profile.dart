@@ -5,6 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../AppColors.dart';
 import 'OptionContainer.dart';
 import 'DefaultContainer.dart';
+import 'ProfilePicture.dart';
 class Profile extends StatelessWidget {
   const Profile({super.key});
 
@@ -17,12 +18,8 @@ class Profile extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(
-                height: 277,
-                child: Image.asset(AppImages.Palestine),
-              ),
+              ProfilePicture(height: 277),
               SizedBox(height: 20),
-
               DefaultContainer(child: Row(
                 children: [
                   Icon(Icons.person_2_outlined),

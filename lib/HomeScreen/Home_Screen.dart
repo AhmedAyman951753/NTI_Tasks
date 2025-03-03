@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/HomeScreen/TaskCounter.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'MyButtons.dart';
 import 'MyContainers.dart';
@@ -104,25 +105,8 @@ class HomeScreen extends StatelessWidget
                   ],
                 )
               ),
-              Container(
-                margin: EdgeInsets.only(left: 20, bottom: 20),
-                child: Row(
-                  children: [
-                    Text("Results"),
-                    SizedBox(width: 50,),
-                    MyButtons(width: 14,
-                      height: 15,
-                      color: AppColors.semiGreen,
-                      radius: 5,
-                      child: Center(child: Text
-                        ("5",
-                          style: TextStyle
-                            (color: Colors.green,
-                             fontSize: 12,
-                             fontWeight: FontWeight.bold),)),)
-                  ],
-                ),
-              ),
+              TaskCounter(label: "Results", number: 5),
+
               MyContainers(title: "Work Task",
                            iconData: SvgPicture.asset(AppIcons.bag),
                            iconColor: Colors.black,
@@ -166,7 +150,6 @@ class HomeScreen extends StatelessWidget
                 buttonColor: AppColors.green,
                 labelColor: Colors.white,
                 task: "Add new feature for Do It app and\ncommit it",),
-
             ],
           ),
         ),

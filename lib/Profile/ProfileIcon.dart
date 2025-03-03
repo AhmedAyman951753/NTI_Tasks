@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import '../AppImages.dart';
-class ProfilePicture extends StatelessWidget {
-  final double height;
-  const ProfilePicture({super.key, required this.height});
+class ProfileIcon extends StatelessWidget {
+  const ProfileIcon({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: height,
+        margin: EdgeInsets.only(left: 15, top: 15),
+        width: 40,
+        height: 40,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20)),
+            shape: BoxShape.circle,
             image: DecorationImage(image: AssetImage(AppImages.Palestine), fit: BoxFit.cover))
     );
   }
